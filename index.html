@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="normalize.css">
+  <script src="script.js"></script>
+
+  <script type="text/javascript">
+    window.onload = function() {
+        document.querySelector(".menu_mobile").addEventListener("click", function(){
+            if (document.querySelector(".menu nav ul").style.display == 'flex'){
+                document.querySelector(".menu nav ul").style.display = 'none';
+                 } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+            }
+        });
+    };
+</script>
+
+  <title>Projeto Integrador Biomedicina/Eng.Software</title>
+</head>
+<body>
+  <!-- Menu do site -->
+    <header>
+      <div  class="container">
+        <div class="logo">
+          <img src="logo santacasa.png" alt="">
+          
+        </div>
+        
+        <div class="menu">
+          <nav>
+            <div class="menu_mobile">
+              <div class="mm_line"></div>
+              <div class="mm_line"></div>
+              <div class="mm_line"></div>
+            </div>
+            <ul>
+              
+              <li class="active"><a href="#textum">Home</a></li>
+              <li><a href="#geral">Dúvidas</a></li>
+              <li><a href="#ultima">Rodapé</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+   
+   <!-- seção do background com imagem da mulher -->
+   <section id="banner">
+   <img class="titulo" src="doenca-hemolit-logo.png" alt="">
+    <img class="medica" src="5150269-removebg-preview copiar.png" alt="">
+    <div class="custom-shape-divider-top-1699037646">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+      </svg>
+      
+      
+  </div>
+  </section>
+        <!--Segunda seção background branco --> 
+    <section id="geral">
+      <div class="container">
+        <section>
+          <div class="widget">
+            <div class="widget_title">
+              <div class="widget_title_text">Algumas Dúvidas a respeito do tema:</div>
+              <div class="widget_title_bar"></div>
+            </div>
+            <div class="widget_body flex">
+              <article>
+                <a href="">
+                  <div class="news_data">
+                    <div class="news_posted_at"> O que é ?</div>
+                    
+                  </div>
+                  <div class="news_thumbnail">
+                    <img src="centro-medico-saiba-como-identificar-os-melhores-scaled.jpg" alt="" srcset="">
+                  </div>
+                  <div id= "textum" style="overflow: hidden; max-height: 60px;" class="news_resume">
+                    Segundo o ministério da saúde, a doença hemolítica perinatal é uma 
+                    patologia que ocorre devido a incompatibilidade sanguínea da mãe e 
+                    do bebê durante a sua vida intra uterina. 
+                    o ponto de vista técnico, isso acontece devido à incompatibilidade 
+                    Rh, pois quando a mãe que possui um Rh negativo está gerando um 
+                    bebê com Rh positivo, o seu organismo começa a combater criando 
+                    anticorpos contra o antígeno D, que está presente no feto. 
+                    Ocasionando uma sensibilização da mãe contra aquele antígeno.
+                  </div>
+                </a>
+                  <button  onclick="showMoreum()">Leia Mais</button>
+              </article>
+
+              <article>
+                <a href="">
+                  <div class="news_data">
+                    <div class="news_posted_at">Como ocorre o diagnóstico?</div>
+                    
+                  </div>
+                  
+                  
+                  <div class="news_thumbnail">
+                    <img src="centro-medico-saiba-como-identificar-os-melhores-scaled.jpg" alt="" srcset="">
+                  </div>
+                  
+                  <div id= "textdois" style="overflow: hidden; max-height: 60px;" class="news_resume">
+                    O diagnóstico se da apenas com exames de sangue da mãe durante 
+                    a gestação, assim quando se descobre a gravidez o medico deverá 
+                    prescrever diversos exames de pré-natal, onde um deles é o ABO/Rh, 
+                    que se vê se o sangue da mãe é positivo ou negativo. 
+                    A partir disso se o sangue da mãe for negativo e possuir anticorpos 
+                    anti – Rh é necessário o pai fazer o mesmo exame, para que se for 
+                    positivo há grandes chances do bebê também ser e acabar 
+                    sensibilizando a mãe ocasionando em hemólise no sangue do bebê. 
+                  </div>
+                </a>
+                <button id="buttondois" onclick="showMoredois()">Leia Mais</button>
+              </article>
+
+              <article>
+                <a href="">
+                  <div class="news_data">
+                    <div class="news_posted_at">O que fazer se meu diagnóstico for Doença hemolítica perinatal?</div>
+                    
+                  </div>
+                  
+                  <div class="news_thumbnail">
+                    <img src="centro-medico-saiba-como-identificar-os-melhores-scaled.jpg" alt="" srcset="">
+                  </div>
+                  
+                  <div id= "texttres" style="overflow: hidden; max-height: 60px;" class="news_resume">
+                    Neste momento o corpo da mãe já foi sensibilizado, e precisará de um 
+                    acompanhamento médico gestacional mais criterioso, sendo feitos os 
+                    exames de anticorpos anti – Rh durante toda a gestação
+                  </div>
+                </a>
+                <button id="buttontres" onclick="showMoretres()">Leia Mais</button>
+              
+              </article>
+
+              <article>
+                <a href="">
+                  <div class="news_data">
+                    
+                    <div class="news_posted_at">Quais são os sintomas da doença hemolítica no recém – nascido?</div>
+                    
+                  </div>
+                  
+                  <div class="news_thumbnail">
+                    <img src="centro-medico-saiba-como-identificar-os-melhores-scaled.jpg" alt="" srcset="">
+                  </div>
+                  
+                  <div id= "textquatro" style="overflow: hidden; max-height: 60px;" class="news_resume">
+                    O RN após o parto estará mais inchado, com uma possível icterícia, 
+                    anêmico, podendo ter os órgãos fígado e baço mais aumentado, e 
+                    acumulo de líquido no seu corpo.
+                  </div>
+                </a>
+                <button id="buttonquatro" onclick="showMorequatro()">Leia Mais</button>
+              </article> 
+            </div>
+          </div>
+          
+        </section>
+        <aside>
+          <div class="widget">
+            <div class="widget_title">
+              <div class="widget_title_text">Fontes Confiáveis de informação</div>
+              <div class="widget_title_bar"></div>
+              <div class="widget_title_principal">Mayo Clinic   </div>
+            <div class="widget_itens">
+              <a href="https://www.mayoclinic.org" id="sitee" target="_blank"><div class="widget_title_desc_text" > Mayo Clinic é uma fonte confiável para informações médicas. Eles têm recursos que explicam a doença hemolítica perinatal, suas causas, sintomas, diagnóstico e opções de tratamento.</div></a>
+            </div>
+            <button class="linkk"><a href="https://www.mayoclinic.org" target="_blank" rel="noopener noreferrer">Link</a></button>
+          </div>
+          </div>
+          <div class="widget">
+            <div class="widget_title">
+             
+              <div class="widget_title_bar"></div>
+              <div class="text_widget">Meios de contato:</div>
+             
+            <div class="contato_itens">
+              <div class="widget_phone"><img src="1ddbe1e99b033293fab57a43d2a7d3fc.jpg" alt=""></div>
+              <div class="phone">Celular: +55(xx) 9 0000-0000</div>
+            </div>
+            <div class="contato_itens">
+              <div class="email"><img src="pngtree-email-vector-icon-png-image_1027071.jpg" alt=""></div>
+              <div class="text_email">Email: empresa@gmail.com</div>
+            </div>  
+            </div>
+            <div class="widget_body">
+            </div>
+          </div>
+          <article>
+            <a href="">
+              <div class="news_data">
+                <div  class="news">Existe uma prevenção que evite essa ocorrência? </div>
+                
+              </div>
+              
+              
+              <div class="news_thumbnail">
+                <img src="centro-medico-saiba-como-identificar-os-melhores-scaled.jpg" alt="" srcset="">
+              </div>
+              
+              <div id= "textcinco" style="overflow: hidden; max-height: 60px;" class="news_resume">
+                Sim, há uma vacina de imunoglobulina que é aplicada na mãe em um 
+                determinado período especifico da gestação e outra dose após 72h do 
+                parto. 
+                Essa imunoglobulina anti – D reveste os glóbulos vermelhos fetais 
+                que tenham entrado na corrente sanguínea da mãe, fazendo com que 
+                seu corpo não o veja como antígeno. Este método impede que a 
+                doença hemolítica do recém – nascido se desenvolva.
+              </div>
+            </a>
+            <button id="buttoncinco" onclick="showMorecinco()">Leia Mais</button>
+          </article>
+
+        </aside>
+      </div>
+    </section>
+            <a class="duv">DÚVIDAS</a>
+        <!--Rodapé do site background preto-->
+        <footer>  
+          <div class="card">
+              <div class="card-image"></div>
+              <div class="card-text">
+                  
+                  <p> Após o nascimento, é importante a estabilização do RN, sendo que
+                    muitas vezes é necessário realizar reanimação cardiovascular, ventilação assistida,
+                    drenagem do líquido pleural, entre outros. Também é importante avaliar o grau de
+                    anemia, hepatoesplenomegalia, prematuridade, etc. A coleta de sangue do cordão, é
+                    realizada para detectar a tipagem ABO e Rh, Coombs direto, Hemograma, bilirrubina
+                    e proteínas totais.
+                    </p>
+              </div>
+              <div class="card-stats">
+                  <div class="stat">
+                    Quais os cuidados necessários com o recém nascido?
+
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-image"></div>
+              <div class="card-text">
+                  
+                  <p>50% dos casos de doença hemolítica são leves, ou seja, não necessitam de tratamento.
+                    25% dos casos vão ter, anemia moderada,  icterícia, sem hidropsia.
+                    25 % são casos graves de hidropsia fetal, com necessidade de  intervenção no período intrauterino.
+                    </p>
+              </div>
+              <div class="card-stats">
+                  <div class="stat">
+                    Atenção
+
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-image"></div>
+              <div class="card-text">
+                  
+                  <p>Gravidez ectópica e aborto espontâneo (também relacionadas a procedimentos como aminiocentese);
+                    Sangramentos ao longo da gravidez.
+                    </p>
+              </div>
+              <div class="card-stats">
+                  <div class="stat">
+                    Principais riscos: Abortamento
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-image"></div>
+              <div class="card-text">
+                  
+                  <p>É necessario durante o pré-natal  se a mulher/gestante é Rh negativo, se possui algum histórico de transfusão prévia ou procedimento fetal anterior, histórico de traumatismo ou cirurgia anterior, histórico de compartilhamento de seringa, mulheres com história de doença hemolítica na gestação anterior, e tambem histórico de aborto e multíparas.
+                  </p>
+              </div>
+              <div class="card-stats">
+                  <div class="stat">
+                    Como investigar uma possivel doença hemolítica perinatal?
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="card-image"></div>
+              <div class="card-text">
+      
+                  <p>Na maioria dos casos ocorrem na segunda gestação, mas existem exceções. Sendo válido relacionar que não há acometimento da doença hemolítica por ABO na fase intrauterina, por ser causada por anticorpos que possuem um alto peso molecular e que não passam pela barreira placentária.</p>
+              </div>
+              <div class="card-stats">
+                  <div class="stat">
+                    A doença Hemolítica Perinatal pode ocorrer na primeira gestação? 
+                  </div>
+              </div>
+      <section>
+        <div class="fundo-ultima-sectionn"></div>
+      </section>
+      
+  
+
+   
+
+   
+</body>
+</html>
