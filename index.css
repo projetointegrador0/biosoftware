@@ -737,3 +737,68 @@ h2 {
 .fundo-ultima-sectionn{
     height: 200px;
 }
+
+
+
+
+
+@media (max-width:376px){
+  footer{
+    display: block;
+    margin-top: 1800px;
+  }
+  
+  .fundo-ultima-sectionn{
+    display: none;
+  }
+
+  .titulo{
+    margin-left: 600px;
+    height: 180px;
+  }
+
+  .esconder{
+    display: block;
+    color: #1e1e1e;
+    font-size: 500px;
+  }
+}
+
+@media (max-width:416px){
+    footer{
+      display: block;
+      margin-top: 1900px;
+    }
+    .medica{
+      display: none;
+    }
+    .fundo-ultima-sectionn{
+      display: none;
+    }
+    .titulo{
+        margin-left: 600px;
+        height: 180px;
+      }
+  }
+
+  @media (max-width:431px){
+    footer{
+      display: block;
+      margin-top: 1900px;
+      margin-left: 38px;
+    }
+    .medica{
+      display: none;
+    }
+    .fundo-ultima-sectionn{
+      display: none;
+    }
+    .titulo{
+        margin-left: 600px;
+        height: 180px;
+      }
+  }
+
+  .esconder{
+    display: none;
+  }
